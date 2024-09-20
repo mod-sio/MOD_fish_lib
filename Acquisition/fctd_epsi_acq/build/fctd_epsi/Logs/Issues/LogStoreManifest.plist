@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2A5D1531-5A6C-40C1-8D7D-3244071F97CB</key>
+		<key>A4DA4EFB-3EFD-4F14-B3B4-3B2CB6F89C43</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,35 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>2A5D1531-5A6C-40C1-8D7D-3244071F97CB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>fctd_epsi-cdrjptcmygifdwbrqsmcxwxhdpmc</string>
-			<key>timeStartedRecording</key>
-			<real>744586815.24796903</real>
-			<key>timeStoppedRecording</key>
-			<real>744586816.72679496</real>
-			<key>title</key>
-			<string>Build target fctd_epsi</string>
-			<key>uniqueIdentifier</key>
-			<string>2A5D1531-5A6C-40C1-8D7D-3244071F97CB</string>
-		</dict>
-		<key>5CCDE310-C81B-4D5C-8C7D-CAFF3C89E3AF</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
-			<key>fileName</key>
-			<string>5CCDE310-C81B-4D5C-8C7D-CAFF3C89E3AF.xcactivitylog</string>
+			<string>A4DA4EFB-3EFD-4F14-B3B4-3B2CB6F89C43.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -52,15 +24,15 @@
 				<string>W</string>
 			</dict>
 			<key>signature</key>
-			<string>fctd_epsi-agqhegicurzwdfdcovlcmgxkwvqw</string>
+			<string>fctd_epsi-dfkwomkzkupoewazoccqestgcpaf</string>
 			<key>timeStartedRecording</key>
-			<real>680948866.51166797</real>
+			<real>748551047.63485396</real>
 			<key>timeStoppedRecording</key>
-			<real>680948866.906039</real>
+			<real>748551048.10629702</real>
 			<key>title</key>
 			<string>Build target fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>5CCDE310-C81B-4D5C-8C7D-CAFF3C89E3AF</string>
+			<string>A4DA4EFB-3EFD-4F14-B3B4-3B2CB6F89C43</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

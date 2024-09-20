@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1523"
             endingLineNumber = "1523"
-            landmarkName = "CheckCksumData(dataStr, packetSize, offset)"
+            landmarkName = "InitFishCTD(fishCTDPtr)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1343"
             endingLineNumber = "1343"
-            landmarkName = "parse_ctd_data_2_f(FishCTDPtr, ctd_rec_ptr)"
+            landmarkName = "GetFishCTDCal_fromfish(fishCTDPtr)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -97,38 +97,6 @@
             startingLineNumber = "618"
             endingLineNumber = "618"
             landmarkName = "acq_package_wo_data_f(som_acq_ptr, data_str, data_length)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0BC6AD97-5FA9-41A8-B0E5-B81572FA9E92"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "utilities/pthread_utils.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "tcp_ip_server_f(arg)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9D8CA018-B656-4E86-9940-96AEB75A87F4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "utilities/pthread_utils.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "tcp_ip_server_f(arg)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -190,9 +158,9 @@
             filePath = "utilities/pthread_utils.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
-            landmarkName = "write_ctd_data_to_file_f(arg)"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "stop_ftcd_epsi_f(arg)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
