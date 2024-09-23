@@ -3,7 +3,7 @@
 %UDPSocket.portnum=50210
 %SENSOR SETUP
 % Survey Name
-CTD.survey='20240923_d01_PCepsitest'
+CTD.survey='20240923_d00_PCtest'
 % experiement name
 CTD.experiment='TESTMOTIVE'
 % cruise name (use the same name as the ship_share folder)
@@ -13,7 +13,7 @@ CTD.vehicle='VEHICLETEST'
 % vehicle pressure case  (epsimako
 CTD.fish_pc='PCtest'
 % CTD.fishflag EPSI or FCTD
-CTD.fishflag='EPSI'
+CTD.fishflag='FCTD'
 %%mako1
 %CTD.SerialNum='0537'
 %%mako2
@@ -59,4 +59,3 @@ PCode.speed=19200
 Ascii_dataFile.runname='EPSI'
 Ascii_dataFile.path='/Users/Shared/FCTD_EPSI_DATA/TESTMOTIVE2024/'
 Ascii_dataFile.dataFileSize=5000000
-

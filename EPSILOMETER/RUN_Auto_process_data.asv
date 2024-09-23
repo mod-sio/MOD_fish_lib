@@ -59,7 +59,7 @@ end
 % create the new process_dir
 input_struct.process_dir = fullfile( ...
                            '/Users/Shared/EPSI_PROCESSING/MOTIVE2024/Processed', ...
-                           survey_name(2:end-1)); %This will create a directory with this name
+                           survey_name); %This will create a directory with this name
 if ~exist(fullfile(input_struct.process_dir,'raw'),'dir')
     mkdir(input_struct.process_dir);
 end
@@ -114,7 +114,7 @@ else
     count=0;
     % quick look in the previous files if survey name exist.
     % In case blue matlab was launched few minutes after fctd_epsi
-    while count<min(10,length(listfile_raw_dir))
+    while count<min(10
         path2setup1=fullfile(...
             listfile_raw_dir((length(listfile_raw_dir)-count)).folder,...
             listfile_raw_dir((length(listfile_raw_dir)-count)).name);
