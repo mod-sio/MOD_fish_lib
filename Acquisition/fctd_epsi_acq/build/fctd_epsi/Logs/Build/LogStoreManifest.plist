@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>CE2F31D5-D4C3-41E6-80CC-468D2EF34C0C</key>
+		<key>13FF638E-9E51-451C-9E9E-9E3519706FD2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,41 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>CE2F31D5-D4C3-41E6-80CC-468D2EF34C0C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>fctd_epsi project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>fctd_epsi</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build fctd_epsi</string>
-			<key>timeStartedRecording</key>
-			<real>748551003.96285701</real>
-			<key>timeStoppedRecording</key>
-			<real>748551006.14063299</real>
-			<key>title</key>
-			<string>Build fctd_epsi</string>
-			<key>uniqueIdentifier</key>
-			<string>CE2F31D5-D4C3-41E6-80CC-468D2EF34C0C</string>
-		</dict>
-		<key>F4B33464-0377-434D-B7AE-E49A43E4CF39</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F4B33464-0377-434D-B7AE-E49A43E4CF39.xcactivitylog</string>
+			<string>13FF638E-9E51-451C-9E9E-9E3519706FD2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +32,489 @@
 			<key>signature</key>
 			<string>Build fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748551047.61625695</real>
+			<real>748803747.61063099</real>
 			<key>timeStoppedRecording</key>
-			<real>748551048.12025595</real>
+			<real>748803747.953264</real>
 			<key>title</key>
 			<string>Build fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>F4B33464-0377-434D-B7AE-E49A43E4CF39</string>
+			<string>13FF638E-9E51-451C-9E9E-9E3519706FD2</string>
+		</dict>
+		<key>2C17F377-E1A8-4278-AF24-C1C03CE2B680</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2C17F377-E1A8-4278-AF24-C1C03CE2B680.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748804864.08968902</real>
+			<key>timeStoppedRecording</key>
+			<real>748804864.12592995</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>2C17F377-E1A8-4278-AF24-C1C03CE2B680</string>
+		</dict>
+		<key>4E1CABC8-0E59-49E5-AF6C-FB987069A6D8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4E1CABC8-0E59-49E5-AF6C-FB987069A6D8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748802991.82622695</real>
+			<key>timeStoppedRecording</key>
+			<real>748802992.274014</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>4E1CABC8-0E59-49E5-AF6C-FB987069A6D8</string>
+		</dict>
+		<key>5322EAFA-DDAF-4BAA-A516-679C926A64AB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5322EAFA-DDAF-4BAA-A516-679C926A64AB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748804773.921</real>
+			<key>timeStoppedRecording</key>
+			<real>748804773.95442903</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>5322EAFA-DDAF-4BAA-A516-679C926A64AB</string>
+		</dict>
+		<key>5D37BDAE-293C-49EA-99C5-65424C26B0C5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5D37BDAE-293C-49EA-99C5-65424C26B0C5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748561656.08031797</real>
+			<key>timeStoppedRecording</key>
+			<real>748561656.15680802</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>5D37BDAE-293C-49EA-99C5-65424C26B0C5</string>
+		</dict>
+		<key>7C0311CE-B700-440E-9850-985F49A324C2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7C0311CE-B700-440E-9850-985F49A324C2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748803366.84965301</real>
+			<key>timeStoppedRecording</key>
+			<real>748803367.14691103</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>7C0311CE-B700-440E-9850-985F49A324C2</string>
+		</dict>
+		<key>89404DBA-3926-407D-BE59-A8D375E0F487</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>89404DBA-3926-407D-BE59-A8D375E0F487.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748803606.87272096</real>
+			<key>timeStoppedRecording</key>
+			<real>748803606.92650294</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>89404DBA-3926-407D-BE59-A8D375E0F487</string>
+		</dict>
+		<key>9658A28E-45A2-4FFA-940A-8B59DC0FFA07</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9658A28E-45A2-4FFA-940A-8B59DC0FFA07.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748804757.88893294</real>
+			<key>timeStoppedRecording</key>
+			<real>748804758.17138696</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>9658A28E-45A2-4FFA-940A-8B59DC0FFA07</string>
+		</dict>
+		<key>9C150E57-9EDE-4404-A0E0-7093DAAA835E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9C150E57-9EDE-4404-A0E0-7093DAAA835E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748803443.59270096</real>
+			<key>timeStoppedRecording</key>
+			<real>748803443.62479401</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>9C150E57-9EDE-4404-A0E0-7093DAAA835E</string>
+		</dict>
+		<key>A7D881FC-D156-4234-846C-86CFFEFFC214</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A7D881FC-D156-4234-846C-86CFFEFFC214.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748803762.98433304</real>
+			<key>timeStoppedRecording</key>
+			<real>748803763.023224</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>A7D881FC-D156-4234-846C-86CFFEFFC214</string>
+		</dict>
+		<key>B5CBC150-1B67-4F33-B7C8-31D523550FBB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B5CBC150-1B67-4F33-B7C8-31D523550FBB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748803270.58868396</real>
+			<key>timeStoppedRecording</key>
+			<real>748803270.96336401</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>B5CBC150-1B67-4F33-B7C8-31D523550FBB</string>
+		</dict>
+		<key>C00DC81E-AF3D-435F-8BD7-0CDB694C3B79</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C00DC81E-AF3D-435F-8BD7-0CDB694C3B79.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748803796.80149198</real>
+			<key>timeStoppedRecording</key>
+			<real>748803796.83379996</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>C00DC81E-AF3D-435F-8BD7-0CDB694C3B79</string>
+		</dict>
+		<key>CB69C644-2C6E-4C13-BDE3-CE2C797DED26</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CB69C644-2C6E-4C13-BDE3-CE2C797DED26.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748560333.63261294</real>
+			<key>timeStoppedRecording</key>
+			<real>748560336.54762101</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>CB69C644-2C6E-4C13-BDE3-CE2C797DED26</string>
+		</dict>
+		<key>CDFCE153-0A72-41DB-8D85-425AF231673C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CDFCE153-0A72-41DB-8D85-425AF231673C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748805237.46741796</real>
+			<key>timeStoppedRecording</key>
+			<real>748805237.75555396</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>CDFCE153-0A72-41DB-8D85-425AF231673C</string>
+		</dict>
+		<key>DFE0F2FA-7C4B-44BE-817D-060248AA4EFF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DFE0F2FA-7C4B-44BE-817D-060248AA4EFF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fctd_epsi project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fctd_epsi</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fctd_epsi</string>
+			<key>timeStartedRecording</key>
+			<real>748804795.36208296</real>
+			<key>timeStoppedRecording</key>
+			<real>748804795.401559</real>
+			<key>title</key>
+			<string>Build fctd_epsi</string>
+			<key>uniqueIdentifier</key>
+			<string>DFE0F2FA-7C4B-44BE-817D-060248AA4EFF</string>
 		</dict>
 	</dict>
 </dict>

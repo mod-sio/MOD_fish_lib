@@ -98,7 +98,7 @@ if isclassfield(obj,'ctd')
             hold(ax(8),'on');
             too_close = obj.alt.dst<=2;
             if sum(too_close)>0
-                plot(ax(8),time_array.alt(too_close),obj.alt.dst(too_close),'o','r');
+                plot(ax(8),time_array.alt(too_close),obj.alt.dst(too_close),'ro');
             end
         end
     
@@ -155,8 +155,10 @@ if isclassfield(obj,'gps')
             lat = nan;
             lon = nan;
         end
-        
-        annotation(gcf,'textbox',...
+        if exist('an1','var')
+            delete(an1);
+        end
+        an1=annotation(gcf,'textbox',...
             [0.8093 0.9754 0.2212 0.0288],...
             'String',{sprintf('lat = %03.4f',lat),sprintf('lon = %03.4f',lon)},...
             'LineStyle','none',...

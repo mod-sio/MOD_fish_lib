@@ -24,7 +24,8 @@
 % --- USER CHOICES --------------------------------------------------------
 % --- From ftcd_epsi/Setup   -------------------------------------------------------
 %TODO give a folder path to Setup
-path2setup='/Volumes/Software_TFO2024/New_mod_fish_lib/MOD_fish_lib/EPSILOMETER/acq/fctd_epsi_acq/build/fctd_epsi/Build/Products/Debug/Setup';
+root_software='/Volumes/MOD HD/Users/Shared/Software_current_cruise/MOD_fish_lib/';
+path2setup=fullfile(root_software,'Acquisition/fctd_epsi_acq/build/fctd_epsi/Build/Products/Debug/Setup');
 fid=fopen(path2setup,'r');
 fseek(fid,0,1);
 frewind(fid);
@@ -60,8 +61,8 @@ Meta_Data_process_file = 'MDP_tfo_2024.txt';
 % input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/TFO2024/Realtime_RAW/';
 % input_struct.Meta_Data_process_file = '/Volumes/Software_TFO2024/EPSILOMETER/Meta_Data_Process/MDP_tfo_2024.txt';
 
-input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/TFO2024/Realtime_RAW/';
-Meta_Data_process_dir = '/Volumes/Software_TFO2024/EPSILOMETER/Meta_Data_Process/';
+input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/MOTIVE2024/Realtime_RAW/';
+Meta_Data_process_dir = fullfile(root_software,'/EPSILOMETER/Meta_Data_Process/');
 input_struct.Meta_Data_process_file = fullfile(Meta_Data_process_dir,Meta_Data_process_file);
 input_struct.refresh_time_sec = 2;
 

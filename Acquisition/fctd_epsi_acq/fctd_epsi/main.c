@@ -478,6 +478,12 @@ int ReadSetupFile(fctd_epsi_ptr_t fctd_epsi_ptr)
             strPtr = strtok(NULL,sep);
             strcpy(fctd_epsi_ptr->fish.fish_pc,strPtr);
         }
+        //ALB 23 Sept 2024:  add fish pressure case name...
+        if (!strcmp("CTD.survey",strPtr))
+        {
+            strPtr = strtok(NULL,sep);
+            strcpy(fctd_epsi_ptr->fish.survey,strPtr);
+        }
         //ALB 19 august 2024:  add fish pressure case name...
         if (!strcmp("CTD.fishflag",strPtr))
         {
@@ -507,6 +513,12 @@ int ReadSetupFile(fctd_epsi_ptr_t fctd_epsi_ptr)
         {
             strPtr = strtok(NULL,sep);    // get string's length
             strcpy(fctd_epsi_ptr->fish.FPO7_Probe_cal_path,strPtr);
+        }
+        //ALB 23 sept 2024:  CTD calibration path...
+        if (!strcmp("CTD.CTD_cal_path",strPtr))    // channel 1 probe serial number
+        {
+            strPtr = strtok(NULL,sep);    // get string's length
+            strcpy(fctd_epsi_ptr->fish.CTD_cal_path,strPtr);
         }
         //ALB 19 august 2024:  record the probes serial number...
         //ALB  on epsi ch1 = t1, ch2 = t2, ch3 = s1, ch4 = s2

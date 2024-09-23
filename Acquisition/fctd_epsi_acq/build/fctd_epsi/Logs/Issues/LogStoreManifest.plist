@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>A4DA4EFB-3EFD-4F14-B3B4-3B2CB6F89C43</key>
+		<key>56FC657D-92B4-43C4-95BC-B2B627A15EF1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>A4DA4EFB-3EFD-4F14-B3B4-3B2CB6F89C43.xcactivitylog</string>
+			<string>56FC657D-92B4-43C4-95BC-B2B627A15EF1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -24,15 +24,15 @@
 				<string>W</string>
 			</dict>
 			<key>signature</key>
-			<string>fctd_epsi-dfkwomkzkupoewazoccqestgcpaf</string>
+			<string>fctd_epsi-fwvwnvcalefcpqcwgmayxgfbbgwl</string>
 			<key>timeStartedRecording</key>
-			<real>748551047.63485396</real>
+			<real>748805237.51199806</real>
 			<key>timeStoppedRecording</key>
-			<real>748551048.10629702</real>
+			<real>748805237.73037004</real>
 			<key>title</key>
 			<string>Build target fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>A4DA4EFB-3EFD-4F14-B3B4-3B2CB6F89C43</string>
+			<string>56FC657D-92B4-43C4-95BC-B2B627A15EF1</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

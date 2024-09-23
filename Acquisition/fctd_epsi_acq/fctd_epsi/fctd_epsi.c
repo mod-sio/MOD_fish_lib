@@ -241,23 +241,26 @@ int fctd_read_setup_write_to_file(fctd_epsi_ptr_t fctd_epsi, FILE *fp_data, char
 int fctd_read_cal_write_to_file(char* cal_fname, FILE *fp_data, char* str,int *total_line)
 {
 	FILE* fp = NULL;
-	char confstr[MAX_LENGTH] = "\0", tempStr[32]="\0", str1[32]="\0", parsestr[32]="\0";
+    char confstr[MAX_LENGTH] = "\0", tempStr[32]="\0", str1[32]="\0", parsestr[32]="\0",parsestr2[256]="\0";
 	char *strPtr;
 	char* sep = "= ";
     
-	char cwd[256], pcwd[256], filename[256];
-	char *cwdPtr;
+    char  filename[256];
+//    char cwd[256], pcwd[256];
+//	char *cwdPtr;
 	ssize_t numBytesWr=0;
 	int len = 0, total_chars = 0, tl = 0;
-	
-    if ((cwdPtr=getcwd(cwd, 256)) == NULL)
-	{
-		perror("getcwd() error");
-		return 0;
-	}
-	// get its parent directory
-	get_path_f(cwd, pcwd);
-	sprintf(filename,"%s/%s",cwd,cal_fname);
+
+    //ALB I am changing this so the calibraion files are not in Debug folder
+//    if ((cwdPtr=getcwd(cwd, 256)) == NULL)
+//	{
+//		perror("getcwd() error");
+//		return 0;
+//	}
+//	// get its parent directory
+//	get_path_f(cwd, pcwd);
+//    sprintf(filename,"%s/%s",cwd,cal_fname);
+	sprintf(filename,"%s",cal_fname);
 	fprintf(stdout,"Reading Cal file %s and writing to data file\n",filename);
 	
 	fp = fopen(filename,"r");
@@ -270,6 +273,13 @@ int fctd_read_cal_write_to_file(char* cal_fname, FILE *fp_data, char* str,int *t
 	{
 		if (confstr[0]=='\0') break;
 		tl++;
+        if (sizeof(confstr)>sizeof(parsestr)){
+            //ALB if CAL file is the same format as dcal command
+            strcpy(parsestr2,confstr);
+            strPtr = strtok(parsestr2,sep);
+
+        }else{
+            //ALB if CAL file is the same format as coef provided by SBE
 		strcpy(parsestr,confstr);
 		strPtr = strtok(parsestr,sep);
         
@@ -302,7 +312,7 @@ int fctd_read_cal_write_to_file(char* cal_fname, FILE *fp_data, char* str,int *t
 			strcpy(tempStr,strPtr);		// copy it into the second temporary string
 			sprintf(confstr,"     %s%c'%s'",str1,'=',tempStr);	// construct the string to write into the data file
 		}
-        
+        }
 		len = (int)strlen(confstr);
 		confstr[len] = '\n';
 		confstr[len+1] = '\0';
@@ -381,10 +391,11 @@ ssize_t fctd_write_header_to_file(fctd_epsi_ptr_t fctd_epsi,int head_tail)
 	char str4Setupfile[2124] = "\0", cal_str[2124] = "\0",probe_cal_str[2124] = "\0";
 	time_t hundredSecs;
 	char timestr[125] = "\0";
-	char cal_file[32] = "\0";
+	char cal_file[256] = "\0";
 	int num_header_line = 0,  val = 0;
 
-	sprintf(cal_file,"%s.CAL",fctd_epsi->fish.SerialNum);
+    //ALB23sept2024: add a path to SBE calibration files.
+	sprintf(cal_file,"%s/%s.CAL",fctd_epsi->fish.CTD_cal_path,fctd_epsi->fish.SerialNum);
 	
 	hundredSecs = Get_Time_In_Hundred_Secs(timestr,0);
 	
