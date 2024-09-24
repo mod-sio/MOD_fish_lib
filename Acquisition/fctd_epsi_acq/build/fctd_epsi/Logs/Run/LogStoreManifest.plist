@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2CEC30DC-5835-45AF-997F-0CE8FA16F0BE</key>
+		<key>43218646-90BC-48D7-9D14-96BE5736C0E9</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>2CEC30DC-5835-45AF-997F-0CE8FA16F0BE.xcactivitylog</string>
+			<string>43218646-90BC-48D7-9D14-96BE5736C0E9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748803270.96699095</real>
+			<real>748895111.25493801</real>
 			<key>timeStoppedRecording</key>
-			<real>748803365.82951105</real>
+			<real>748895112.77696204</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>2CEC30DC-5835-45AF-997F-0CE8FA16F0BE</string>
+			<string>43218646-90BC-48D7-9D14-96BE5736C0E9</string>
 		</dict>
-		<key>30862CD4-3E49-4A5D-A209-9B8D451C1BE5</key>
+		<key>432908E0-9131-433A-8BD4-4A37D5030B79</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>30862CD4-3E49-4A5D-A209-9B8D451C1BE5.xcactivitylog</string>
+			<string>432908E0-9131-433A-8BD4-4A37D5030B79.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,15 +66,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748804758.17473102</real>
+			<real>748898617.90374899</real>
 			<key>timeStoppedRecording</key>
-			<real>748804773.20412195</real>
+			<real>748898619.95848095</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>30862CD4-3E49-4A5D-A209-9B8D451C1BE5</string>
+			<string>432908E0-9131-433A-8BD4-4A37D5030B79</string>
 		</dict>
-		<key>3CBAD727-F527-491B-8359-310D95D30300</key>
+		<key>52AD17AE-4C18-4867-B481-16F42F132AE2</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -83,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>3CBAD727-F527-491B-8359-310D95D30300.xcactivitylog</string>
+			<string>52AD17AE-4C18-4867-B481-16F42F132AE2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -100,15 +100,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748803763.026559</real>
+			<real>748894313.38917899</real>
 			<key>timeStoppedRecording</key>
-			<real>748803796.06953204</real>
+			<real>748894315.37236202</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>3CBAD727-F527-491B-8359-310D95D30300</string>
+			<string>52AD17AE-4C18-4867-B481-16F42F132AE2</string>
 		</dict>
-		<key>5DAF9AF1-1CEA-4EB0-B499-B74FA843B21D</key>
+		<key>558B7DD0-9BF8-45E5-824C-4E546DCBD5DB</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -117,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>5DAF9AF1-1CEA-4EB0-B499-B74FA843B21D.xcactivitylog</string>
+			<string>558B7DD0-9BF8-45E5-824C-4E546DCBD5DB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,15 +134,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748804773.95744395</real>
+			<real>748898090.92738104</real>
 			<key>timeStoppedRecording</key>
-			<real>748804794.65420306</real>
+			<real>748898242.46959805</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>5DAF9AF1-1CEA-4EB0-B499-B74FA843B21D</string>
+			<string>558B7DD0-9BF8-45E5-824C-4E546DCBD5DB</string>
 		</dict>
-		<key>7D1AC57F-9F7E-477F-8F8D-B3712C1ADFD3</key>
+		<key>7EE0AFF6-80D0-4C5D-996E-BCA9D77C9E94</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -151,7 +151,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>7D1AC57F-9F7E-477F-8F8D-B3712C1ADFD3.xcactivitylog</string>
+			<string>7EE0AFF6-80D0-4C5D-996E-BCA9D77C9E94.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -168,115 +168,13 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748804864.12985599</real>
+			<real>748895437.44987202</real>
 			<key>timeStoppedRecording</key>
-			<real>748805232.89523804</real>
+			<real>748895438.89426601</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>7D1AC57F-9F7E-477F-8F8D-B3712C1ADFD3</string>
-		</dict>
-		<key>7F6D4F00-1B32-4503-82E0-7CD61408D28B</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>7F6D4F00-1B32-4503-82E0-7CD61408D28B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>fctd_epsi project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>fctd_epsi</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run fctd_epsi</string>
-			<key>timeStartedRecording</key>
-			<real>748804795.40527105</real>
-			<key>timeStoppedRecording</key>
-			<real>748804862.85924804</real>
-			<key>title</key>
-			<string>Run fctd_epsi</string>
-			<key>uniqueIdentifier</key>
-			<string>7F6D4F00-1B32-4503-82E0-7CD61408D28B</string>
-		</dict>
-		<key>8893DBB4-0034-4EE3-B205-7FF11228EFA6</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>8893DBB4-0034-4EE3-B205-7FF11228EFA6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>fctd_epsi project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>fctd_epsi</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run fctd_epsi</string>
-			<key>timeStartedRecording</key>
-			<real>748803747.956743</real>
-			<key>timeStoppedRecording</key>
-			<real>748803762.15227997</real>
-			<key>title</key>
-			<string>Run fctd_epsi</string>
-			<key>uniqueIdentifier</key>
-			<string>8893DBB4-0034-4EE3-B205-7FF11228EFA6</string>
-		</dict>
-		<key>89DD8D9B-9E91-4D8B-B6E6-788414507185</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>89DD8D9B-9E91-4D8B-B6E6-788414507185.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>fctd_epsi project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>fctd_epsi</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run fctd_epsi</string>
-			<key>timeStartedRecording</key>
-			<real>748803443.62831199</real>
-			<key>timeStoppedRecording</key>
-			<real>748803545.21680403</real>
-			<key>title</key>
-			<string>Run fctd_epsi</string>
-			<key>uniqueIdentifier</key>
-			<string>89DD8D9B-9E91-4D8B-B6E6-788414507185</string>
+			<string>7EE0AFF6-80D0-4C5D-996E-BCA9D77C9E94</string>
 		</dict>
 		<key>8D3A3952-0CD6-4F7A-B024-F87CCEB64D0E</key>
 		<dict>
@@ -312,7 +210,7 @@
 			<key>uniqueIdentifier</key>
 			<string>8D3A3952-0CD6-4F7A-B024-F87CCEB64D0E</string>
 		</dict>
-		<key>8F0C035E-0B1B-4B50-A8DF-46989FEADE80</key>
+		<key>90CB6468-BB00-4133-90AF-310CD5E2D202</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -321,7 +219,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>8F0C035E-0B1B-4B50-A8DF-46989FEADE80.xcactivitylog</string>
+			<string>90CB6468-BB00-4133-90AF-310CD5E2D202.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -338,15 +236,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748560336.55146301</real>
+			<real>748895301.93274701</real>
 			<key>timeStoppedRecording</key>
-			<real>748560340.66247594</real>
+			<real>748895303.72769904</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>8F0C035E-0B1B-4B50-A8DF-46989FEADE80</string>
+			<string>90CB6468-BB00-4133-90AF-310CD5E2D202</string>
 		</dict>
-		<key>E3AE3F74-7219-4497-9A62-F1C908DAA16C</key>
+		<key>956A0F3C-843B-4A04-8E48-10083DB52B1B</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -355,7 +253,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>E3AE3F74-7219-4497-9A62-F1C908DAA16C.xcactivitylog</string>
+			<string>956A0F3C-843B-4A04-8E48-10083DB52B1B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -372,15 +270,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748802992.27729404</real>
+			<real>748898290.03666604</real>
 			<key>timeStoppedRecording</key>
-			<real>748802994.05755794</real>
+			<real>748898616.93298197</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>E3AE3F74-7219-4497-9A62-F1C908DAA16C</string>
+			<string>956A0F3C-843B-4A04-8E48-10083DB52B1B</string>
 		</dict>
-		<key>F00B9775-F1F4-4C1D-AE1F-C64906527AAE</key>
+		<key>C035910E-2D77-4215-97BB-5BA9F32D5F96</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -389,7 +287,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>F00B9775-F1F4-4C1D-AE1F-C64906527AAE.xcactivitylog</string>
+			<string>C035910E-2D77-4215-97BB-5BA9F32D5F96.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -406,15 +304,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748803367.15027106</real>
+			<real>748894915.57319796</real>
 			<key>timeStoppedRecording</key>
-			<real>748803426.32598197</real>
+			<real>748894917.40424502</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>F00B9775-F1F4-4C1D-AE1F-C64906527AAE</string>
+			<string>C035910E-2D77-4215-97BB-5BA9F32D5F96</string>
 		</dict>
-		<key>F2366D18-6FF8-4FBD-8E8C-CCE76C7F9C35</key>
+		<key>E79C730F-5350-4792-8C22-059E8965E40B</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -423,7 +321,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>F2366D18-6FF8-4FBD-8E8C-CCE76C7F9C35.xcactivitylog</string>
+			<string>E79C730F-5350-4792-8C22-059E8965E40B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -440,15 +338,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748561656.16056001</real>
+			<real>748895496.96801198</real>
 			<key>timeStoppedRecording</key>
-			<real>748802986.44935298</real>
+			<real>748895556.97996294</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>F2366D18-6FF8-4FBD-8E8C-CCE76C7F9C35</string>
+			<string>E79C730F-5350-4792-8C22-059E8965E40B</string>
 		</dict>
-		<key>F8BA1D3B-8D07-4BD0-B7F4-4010225C2AD0</key>
+		<key>EED48ABA-74CA-4CE9-A091-666A83A7A02B</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -457,7 +355,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>F8BA1D3B-8D07-4BD0-B7F4-4010225C2AD0.xcactivitylog</string>
+			<string>EED48ABA-74CA-4CE9-A091-666A83A7A02B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -474,15 +372,15 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748803606.92930603</real>
+			<real>748895262.43469</real>
 			<key>timeStoppedRecording</key>
-			<real>748803747.19306302</real>
+			<real>748895263.91269696</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>F8BA1D3B-8D07-4BD0-B7F4-4010225C2AD0</string>
+			<string>EED48ABA-74CA-4CE9-A091-666A83A7A02B</string>
 		</dict>
-		<key>FBC2C9F9-35A7-473D-8B84-79AD7384608B</key>
+		<key>FE47A87F-2BE8-4751-A4C4-C69DBA22BB66</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -491,7 +389,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>FBC2C9F9-35A7-473D-8B84-79AD7384608B.xcactivitylog</string>
+			<string>FE47A87F-2BE8-4751-A4C4-C69DBA22BB66.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -508,13 +406,13 @@
 			<key>signature</key>
 			<string>Run fctd_epsi</string>
 			<key>timeStartedRecording</key>
-			<real>748803796.837075</real>
+			<real>748895035.41106498</real>
 			<key>timeStoppedRecording</key>
-			<real>748804756.88168705</real>
+			<real>748895036.98904395</real>
 			<key>title</key>
 			<string>Run fctd_epsi</string>
 			<key>uniqueIdentifier</key>
-			<string>FBC2C9F9-35A7-473D-8B84-79AD7384608B</string>
+			<string>FE47A87F-2BE8-4751-A4C4-C69DBA22BB66</string>
 		</dict>
 	</dict>
 </dict>

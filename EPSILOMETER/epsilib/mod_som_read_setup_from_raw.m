@@ -1,16 +1,23 @@
-%read config file
-function setup=mod_som_read_setup_from_raw(str)
+%read modraw file
+function setup=mod_som_read_setup_from_raw(argstr)
 
-% fid=fopen(filepath);
-% total_str = fread(fid,'*char');
+if length(argstr)>200
+        % argstr is the actual setup bytes
+        str=argstr(:).';    
+else
+    % argstr is the filepath
+    fid=fopen(argstr);
+    total_str = fread(fid,'*char');
+    total_str=total_str(:).';
+    % % NC 13 Aug 2022 - Save filepath so you can open it up again later to get the SBE number
+    % setup.filepath = filepath;
+    %
+    [ind_settings_start,ind_settings_stop, ~] = regexp(total_str,'\$SOM3([\S\s]+?)\*([0-9A-Fa-f][0-9A-Fa-f])\r\n','start','end','tokenExtents');
+    %
+    % %
+    str=total_str(ind_settings_start+32:ind_settings_stop-5);
+end
 % 
-% % NC 13 Aug 2022 - Save filepath so you can open it up again later to get the SBE number
-% setup.filepath = filepath;
-% 
-% [ind_settings_start,ind_settings_stop, ind_settings_tokens] = regexp(total_str.','\$SOM3([\S\s]+?)\*([0-9A-Fa-f][0-9A-Fa-f])\r\n','start','end','tokenExtents');
-% 
-% % 
-% str=total_str(ind_settings_start+32:ind_settings_stop-5);
 conv16d=@(x) (x(2).*256+x(1));
 conv32d=@(x) (x(4).*256^3+x(3).*256^2+x(2).*256+x(1));
 %%

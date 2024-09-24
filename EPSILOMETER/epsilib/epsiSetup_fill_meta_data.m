@@ -87,9 +87,9 @@ Meta_Data.PROCESS.recording_mod='SD';
 for n=1:numel(Meta_Data.PROCESS.channels)
     if contains(Meta_Data.PROCESS.channels{n},'a')
         Meta_Data.PROCESS.timeseries{n} = sprintf('%s_g',Meta_Data.PROCESS.channels{n});
-    elseif contains(Meta_Data.PROCESS.channels(n),{'s','t'})
+    elseif contains(Meta_Data.PROCESS.channels(n),{'s','t','c','f'})
         Meta_Data.PROCESS.timeseries{n} = sprintf('%s_volt',Meta_Data.PROCESS.channels{n});
-    elseif contains(Meta_Data.PROCESS.channels(n),'c')
+    elseif contains(Meta_Data.PROCESS.channels(n),'c','f')
         Meta_Data.PROCESS.timeseries{n} = sprintf('%s_count',Meta_Data.PROCESS.channels{n});
     end
 end

@@ -28,10 +28,9 @@ plotSec = 30; %Number of seconds of data that will be plotted in timeseries
 tscan = 4; %Length of scan in seconds
 centerScan = tscan/2; %Plotted spectra will be centered tscan/2 seconds from the end of the timeseries
 str_to_match = '*';
-CTD_SN = '0237';
 
 % Directory containing streaming raw data
-rawDir = '/Users/Shared/FCTD_EPSI/RAW';
+rawDir = '/Users/Shared/EPSI_PROCESSING/MOTIVE2024/Realtime_RAW/raw';
 dirs.raw_incoming = rawDir;
 
 % Choose time units
@@ -94,8 +93,8 @@ elseif ~isempty(dir_has_config) %if there is a config file...
     end
     % Fill Meta Data from setup data
     try
-        obj.Meta_Data.CTD.SN = CTD_SN;
-        setup.S49.sn = CTD_SN;
+        % obj.Meta_Data.CTD.SN = CTD_SN;
+        % setup.S49.sn = CTD_SN;
         obj.Meta_Data = epsiSetup_fill_meta_data(obj.Meta_Data,setup);
         
         fprintf('Meta_Data.paths.process_library is %s \n',obj.Meta_Data.paths.process_library);
@@ -114,7 +113,7 @@ else %if there is no log file or config file, look for config data inside the ra
     
     try
         setupfile=dir(fullfile(dirs.raw_incoming,'EPSI*'));
-        setup=mod_som_read_setup_from_raw(fullfile(setupfile(1).folder,setupfile(1).name));
+        setup=mod_som_read_setup_from_raw(fullfile(setupfile(end).folder,setupfile(end).name));
     catch err
         for j = 1:length(err.stack)
             disp([num2str(j) ' ' err.stack(j).name ' ' num2str(err.stack(j).line)]);
@@ -126,8 +125,8 @@ else %if there is no log file or config file, look for config data inside the ra
     end
     % Fill Meta Data from setup data
     try
-        obj.Meta_Data.CTD.SN = CTD_SN;
-        setup.S49.sn = CTD_SN;
+        % obj.Meta_Data.CTD.SN = CTD_SN;
+        % setup.S49.sn = CTD_SN;
         obj.Meta_Data = epsiSetup_fill_meta_data(obj.Meta_Data,setup);
         
     catch err
@@ -147,8 +146,8 @@ obj.epsi = [];
 obj = epsiSetup_make_empty_structure(obj);
 obj.plot_properties = epsiSetup_set_plot_properties;
 % Create Meta_Data
-obj.Meta_Data.CTD.SN = CTD_SN;
-setup.S49.sn = CTD_SN;
+% obj.Meta_Data.CTD.SN = CTD_SN;
+% setup.S49.sn = CTD_SN;
 obj.Meta_Data = epsiSetup_fill_meta_data(obj.Meta_Data,setup);
 obj.Meta_Data = epsiSetup_read_MetaProcess(obj.Meta_Data,...
     fullfile(obj.Meta_Data.paths.process_library,'Meta_Data_Process','Meta_Data_Process_blt_2022.txt'));

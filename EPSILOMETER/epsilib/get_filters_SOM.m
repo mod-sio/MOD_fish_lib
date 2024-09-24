@@ -9,7 +9,7 @@ function H=get_filters_SOM(Meta_Data,f)
 % Feb 2019 ALB
 
 forig=f;
-if contains(Meta_Data.vehicle_name,'sa_apex')
+if contains(Meta_Data.vehicle_name(:).','sa_apex')
     Fs_epsi=320;
     [~,f]  =  pwelch(0*(1:Meta_Data.PROCESS.nfft),...
     Meta_Data.PROCESS.nfft,[], ...
@@ -19,9 +19,16 @@ end
 
 
 try
+try    
 switch Meta_Data.AFE.s1.ADCfilter
     case 'sinc4'
         Hs1filter=(sinc(f/(2*f(end)))).^4;
+end
+catch
+switch Meta_Data.AFE.f1.ADCfilter
+    case 'sinc4'
+        Hs1filter=(sinc(f/(2*f(end)))).^4;
+end
 end
 switch Meta_Data.AFE.t1.ADCfilter
     case 'sinc4'
@@ -40,7 +47,7 @@ switch Meta_Data.Firmware.ADCfilter
 end
 end
 
-if contains(Meta_Data.vehicle_name,'sa_apex')
+if contains(Meta_Data.vehicle_name(:).','sa_apex')
         Hs1filter=interp1(f,Hs1filter ,forig);
         Ht1filter=interp1(f,Ht1filter ,forig);
         Ha1filter=interp1(f,Ha1filter ,forig);

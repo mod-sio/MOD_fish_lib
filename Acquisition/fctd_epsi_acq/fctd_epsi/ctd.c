@@ -706,6 +706,7 @@ Boolean FishCTD_AcquireData(fish_ctd_ptr_t fishCTDPtr)
             }
             delay=0xFFFF;
 
+            
 
 //            status = acq_package_w_data_f(fishCTDPtr,data_str,&data_length);
 
@@ -723,7 +724,7 @@ Boolean FishCTD_AcquireData(fish_ctd_ptr_t fishCTDPtr)
                 while (delay>0){
                     delay--;
                 }
-                delay=0xFFFF;
+                delay=0xFFFFF;
 
 
             }else if(strcmp(fishCTDPtr->fish_flag,"FCTD")==0){
@@ -737,9 +738,48 @@ Boolean FishCTD_AcquireData(fish_ctd_ptr_t fishCTDPtr)
                 while (delay>0){
                     delay--;
                 }
-                delay=0xFFFF;
+                delay=0xFFFFF;
 
             }
+            
+            fprintf(stdout, "settings.mission %s %s\r\n",fishCTDPtr->experiment,fishCTDPtr->vehicle);
+            sprintf(som_cmd, "settings.mission");
+            if (strcmp(fishCTDPtr->CTDPortName,fishCTDPtr->CommandPortName)!=0){
+                numBytes = write(fishCTDPtr->SerialPort4Command.spd, som_cmd, strlen(som_cmd));
+            }else{
+                numBytes = write(fishCTDPtr->SerialPort4CTD.spd, som_cmd, strlen(som_cmd));
+            }
+
+            while (delay>0){
+                delay--;
+            }
+            delay=0xFFFFF;
+
+            sprintf(som_cmd, " %s",fishCTDPtr->experiment);
+            if (strcmp(fishCTDPtr->CTDPortName,fishCTDPtr->CommandPortName)!=0){
+                numBytes = write(fishCTDPtr->SerialPort4Command.spd, som_cmd, strlen(som_cmd));
+            }else{
+                numBytes = write(fishCTDPtr->SerialPort4CTD.spd, som_cmd, strlen(som_cmd));
+            }
+
+            while (delay>0){
+                delay--;
+            }
+            delay=0xFFFFF;
+
+            sprintf(som_cmd, " %s\r\n",fishCTDPtr->vehicle);
+            if (strcmp(fishCTDPtr->CTDPortName,fishCTDPtr->CommandPortName)!=0){
+                numBytes = write(fishCTDPtr->SerialPort4Command.spd, som_cmd, strlen(som_cmd));
+            }else{
+                numBytes = write(fishCTDPtr->SerialPort4CTD.spd, som_cmd, strlen(som_cmd));
+            }
+
+            while (delay>0){
+                delay--;
+            }
+            delay=0xFFFFF;
+
+            
             fprintf(stdout, "som.start\r\n");
             sprintf(som_cmd,"som.start\r\n");
             if (strcmp(fishCTDPtr->CTDPortName,fishCTDPtr->CommandPortName)!=0){
@@ -752,7 +792,7 @@ Boolean FishCTD_AcquireData(fish_ctd_ptr_t fishCTDPtr)
                 delay--;
             }
             delay=0xFFFF;
-            
+
             //ALB releasing the Command port so we can set actuator from python on another terminal
             //ALB I need to reopen it when we do som.stop.
             if (strcmp(fishCTDPtr->CTDPortName,fishCTDPtr->CommandPortName)!=0){
@@ -1045,17 +1085,17 @@ int GetFishCTDCal(ctd_coeff_ptr_t coeffFishCTDPtr, char* calFileName)
     
     int total_line = 0;
     
-    if ((cwdPtr=getcwd(cwd, 256)) == NULL)
-    {
-        perror("getcwd() error");
-        return 0;
-    }
-    // get its parent directory
-    get_path_f(cwd, pcwd);
-    sprintf(filename,"%s/%s",cwd,calFileName);
-    fprintf(stdout,"Reading Cal file %s\n",filename);
+//    if ((cwdPtr=getcwd(cwd, 256)) == NULL)
+//    {
+//        perror("getcwd() error");
+//        return 0;
+//    }
+//    // get its parent directory
+//    get_path_f(cwd, pcwd);
+//    sprintf(filename,"%s/%s",cwd,calFileName);
+    fprintf(stdout,"Reading Cal file %s\n",calFileName);
     
-    fp = fopen(filename,"r");
+    fp = fopen(calFileName,"r");
     if(fp==NULL){
         printf("Could not open the calibration file for fish\n");
         return 0;
@@ -1512,7 +1552,7 @@ int GetFishProbeCal(probe_coeff_ptr_t coeffFishProbePtr, char* calFileName)
  */
 int InitFishCTD(fish_ctd_ptr_t fishCTDPtr)
 {
-    char filename[32];
+    char filename[256];
     //ALB 19 August 2024 add probe calibration filename
     char probe1_cal_filename[256];
     char probe2_cal_filename[256];
@@ -1531,7 +1571,7 @@ int InitFishCTD(fish_ctd_ptr_t fishCTDPtr)
     fishCTDPtr->SOM_Write2BufferIndx = 0;
     fishCTDPtr->SOM_ReadBufferIndx = 0;
     fishCTDPtr->CTD_ReadBufferIndx_2 = 0;
-    sprintf(filename,"%s.CAL",fishCTDPtr->SerialNum);
+    sprintf(filename,"%s/%s.CAL",fishCTDPtr->CTD_cal_path,fishCTDPtr->SerialNum);
 
     //ALB this is where we get the cal coef for FCTD
     //ALB only ch3 and ch4 because ch1 and ch2 are temp with no calibration.

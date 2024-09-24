@@ -31,7 +31,7 @@ str_to_match = '*';
 CTD_SN = '0237';
 
 % Directory containing streaming raw data
-rawDir = '/Volumes/Epsidrive/bench_testing';
+rawDir = '/Users/Shared/EPSI_PROCESSING/MOTIVE2024/Realtime_RAW';
 dirs.raw_incoming = rawDir;
 
 % Choose time units

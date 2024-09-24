@@ -26,10 +26,6 @@ shearcal_path = strrep(localpath,'//','/');
 try
     path2file1 = fullfile(shearcal_path,Meta_Data.(field_name).s1.SN,sprintf('Calibration_%s.txt',Meta_Data.(field_name).s1.SN));
     path2file2 = fullfile(shearcal_path,Meta_Data.(field_name).s2.SN,sprintf('Calibration_%s.txt',Meta_Data.(field_name).s2.SN));
-catch
-    path2file1 = fullfile(shearcal_path,Meta_Data.(field_name).s1.SN.',sprintf('Calibration_%s.txt',Meta_Data.(field_name).s1.SN.'));
-    path2file2 = fullfile(shearcal_path,Meta_Data.(field_name).s2.SN.',sprintf('Calibration_%s.txt',Meta_Data.(field_name).s2.SN.'));
-end
     
 
 if ~strcmp(Meta_Data.(field_name).s1.SN,'000')
@@ -61,4 +57,8 @@ if ~strcmp(Meta_Data.(field_name).s2.SN,'000')
         end
     end
 end
+catch
+    disp('get_shear_calibration: No s1 s2 channels. Fine is using FCTD  ')
+end
+
 end

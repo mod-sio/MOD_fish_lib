@@ -240,8 +240,8 @@ if isempty(ind_som_start)
     setup=mod_som_read_setup_from_config('EPSILOMETER/config_files/bench_config');
     Meta_Data=epsiSetup_fill_meta_data(Meta_Data,setup);
 else
-    str_setup=str(ind_som_start+32:ind_som_stop-5);
-    % str_setup=str(ind_som_start:ind_som_stop);
+    % settings=str(ind_som_start+32:ind_som_stop-5);
+    str_setup=str(ind_som_start:ind_som_stop);
     setup=mod_som_read_setup_from_raw(str_setup);
     Meta_Data=epsiSetup_fill_meta_data(Meta_Data,setup);
 
@@ -506,7 +506,7 @@ else
         
         % If timestamp has values like 1.6e12, it is in milliseconds since Jan
         % 1, 1970. Otherwise it's in milliseconds since the start of the record
-        if nanmedian(epsi_timestamp)>1e9
+        if median(epsi_timestamp,'omitmissing')>1e9
             % time_s - seconds since 1970
             % dnum - matlab datenum
             [epsi.time_s,epsi.dnum] = convert_timestamp(epsi_timestamp);

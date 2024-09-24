@@ -3,6 +3,8 @@ fctd_mat_dir = fullfile(ec.Meta_Data.paths.data,'fctd_mat');
 
 %% First, concatenate the individual fctd files in the deployment directory
 [FCTDall,FCTDgrid] = concatenate_and_grid_fctd(fctd_mat_dir);
+
+if ~isempty(FCTDgrid)
 %% Plot some stuff
 clf
 %%ax = [];
@@ -105,5 +107,5 @@ end
 %MHA hack
 %[ax(1:2).YLim] = deal([zlim(1) 500]);
 
-
+end %end of ~isempty(FCTDgrid)
 

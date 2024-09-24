@@ -262,7 +262,7 @@ mint=min([t1min, t2min]);
                 data(ind,:,:) = cell2mat(cellfun(@(x) EPSI.(wh_channels)(x-indexes(1)+1),indscan1,'un',0)).';
             case 't2_volt'
                 data(ind,:,:) = cell2mat(cellfun(@(x) EPSI.(wh_channels)(x-indexes(1)+1),indscan1,'un',0)).';
-            case {'s1_volt','s2_volt'}
+            case {'s1_volt','s2_volt','f1_volt','c1_volt'}
                 data(ind,:,:) = cell2mat(cellfun(@(x) EPSI.(wh_channels)(x-indexes(1)+1),indscan1,'un',0)).';
             case {'a1_g','a2_g','a3_g'}
                 data(ind,:,:) = cell2mat(cellfun(@(x) EPSI.(wh_channels)(x-indexes(1)+1),indscan1,'un',0)).';
@@ -541,7 +541,7 @@ if makeFig
         Emps=loglog(ax(6),f1,10.^test_snoise1,'c-','linewidth',2);
         
         grid(ax(6),'on')
-        legend([l0,l1 l2 l3 l4 l5 l6 l7 n24 n20 n16 An1 An2 Emp Emps],{'no TF','t1','t2','s1','s2','a1','a2','a3','24 bit','20 bit','16 bit','Kionix Accel noise','ADXL Accel noise','t1-noise','s1-noise'},'location','SouthWest')
+        legend([l0,l1 l2 l3 l4 l5 l6 l7 n24 n20 n16 An1 An2 Emp Emps],{'no TF','t1','t2','s1','s2','a1','a2','a3','24 bit','20 bit','16 bit','Kionix Accel noise','ADXL Accel noise','t1-noise','s1-noise'},'location','NorthWest')
         set(ax(6),'fontsize',14)
         ylabel(ax(6),'V^2 / Hz','fontsize',14)
         xlabel(ax(6),'Hz','fontsize',14)
