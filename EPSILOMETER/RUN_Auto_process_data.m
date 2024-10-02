@@ -20,6 +20,21 @@
 %  .refresh_time_sec = (default 5*60), refresh period in seconds 
 %  .version       = (default 4), version of mod_som_read_epsi_files.m to use 
 % -------------------------------------------------------------------------
+%
+% USER INPUTS
+% These will probably be the same for the whole cruise 
+input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/Current_Cruise/Realtime_RAW/raw/';
+input_struct.Meta_Data_process_file = '/Volumes/Software_TFO2024/EPSILOMETER/Meta_Data_Process/MDP_tfo_2024.txt';
+input_struct.refresh_time_sec =  2*60;
+input_struct.cruise_specifics = 'tfo_2024';
+epsi_depth_array = 0:1600;
+fctd_depth_array = 0:2100;
+
+% -------------------------------------------------------------------------
+
+
+
+
 root_software='/Volumes/MOD HD/Users/Shared/Software_current_cruise/MOD_fish_lib/';
 path2setup=fullfile(root_software,'Acquisition/fctd_epsi_acq/build/fctd_epsi/Build/Products/Debug/Setup');
 fid=fopen(path2setup,'r');
@@ -42,6 +57,14 @@ else
 
 end
 
+switch instrument
+    case {'epsi','EPSI'}
+        input_struct.depth_array = epsi_depth_array;
+    case {'fctd','FCTD'}
+        input_struct.depth_array = fctd_depth_array;
+end
+
+
 newSurvey_flag=contains(str,'CTD.survey');
 if newSetup_flag
     surveyflag_str      = str(strfind(str,'CTD.survey')+(0:100));
@@ -58,19 +81,14 @@ end
 % ALB this routine now grab the survey name from the setup file 
 % create the new process_dir
 input_struct.process_dir = fullfile( ...
-                           '/Users/Shared/EPSI_PROCESSING/MOTIVE2024/Processed', ...
+                           '/Users/Shared/EPSI_PROCESSING/Current_Cruise/Processed', ...
                            survey_name(2:end-1)); %This will create a directory with this name
 if ~exist(fullfile(input_struct.process_dir,'raw'),'dir')
     mkdir(input_struct.process_dir);
 end
 
-
-
-% DO NOT CHANGE raw_dir 
-input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/MOTIVE2024/Realtime_RAW/raw/';
-
-
-% ALB getting rid of str_to_match
+% ALB getting rid of str_to_match - we don't need it now because the Setup
+% file defines a directory to put processed files in
 % looking for the folder "raw" in input_struct.process_dir
 % and the lastest file in "raw" to get str_
 if exist(fullfile(input_struct.process_dir,'raw'),'dir')
@@ -145,18 +163,7 @@ end
 
 %ALB include survey name in the Meta_Data
 
-% -------------------------------------------------------------------------
 
-% These will probably be the same for the whole cruise
-input_struct.Meta_Data_process_file = '/Volumes/Software_TFO2024/EPSILOMETER/Meta_Data_Process/MDP_tfo_2024.txt';
-input_struct.refresh_time_sec =  2*60;
-input_struct.cruise_specifics = 'tfo_2024';
-switch instrument
-    case {'epsi','EPSI'}
-        input_struct.depth_array = 0:1600;
-    case {'fctd','FCTD'}
-        input_struct.depth_array = 0:2100;
-end
 
 % Set command window color
 set_window_color('cyan')

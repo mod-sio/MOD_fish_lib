@@ -49,6 +49,7 @@ for i=length(myASCIIfiles)-(N-1):length(myASCIIfiles)
     matData.gps   = epsiProcess_merge_mat_files(matData.gps,gps);
     matData.ttv   = epsiProcess_merge_mat_files(matData.ttv,ttv);
     matData.fluor = epsiProcess_merge_mat_files(matData.fluor,fluor);
+
 end
 
 clear epsi ctd alt act vnav ttv fluor;

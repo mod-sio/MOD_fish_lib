@@ -218,6 +218,10 @@ end
 try
     myASCIIfiles = dir(fullfile(dirs.raw_copy, suffixSearch));
     raw_dir = dirs.raw_copy;
+    if isempty(myASCIIfiles)
+        myASCIIfiles = dir(fullfile(dirs.raw_incoming, suffixSearch));
+        raw_dir = dirs.raw_incoming;
+    end
 catch
     myASCIIfiles = dir(fullfile(dirs.raw_incoming, suffixSearch));
     raw_dir = dirs.raw_incoming;

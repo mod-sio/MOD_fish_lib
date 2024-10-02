@@ -53,6 +53,9 @@ else
         % (after minor changes in make_FCTD_mat .line 107)
         data.epsi.s1_volt=data.epsi.f1_volt;
         data.epsi.s2_volt=data.epsi.c1_volt;
+    else
+        data.epsi.f1_volt=data.epsi.s1_volt;
+        data.epsi.c1_volt=data.epsi.s2_volt;
     end
 
     %% Put new data from all peripherals into obj

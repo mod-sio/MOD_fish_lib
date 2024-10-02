@@ -22,9 +22,29 @@
 
 % -------------------------------------------------------------------------
 % --- USER CHOICES --------------------------------------------------------
+
+% Also plot spectra?
+include_spectra = 0;
+
+% Meta_Data process file (make sure this file has the correct serial
+% numbers for CTD, s1, s2, t1, t2. If you're running fctd, you can leave
+% s1, s2, t1, t2 = '115')
+Meta_Data_process_file = 'MDP_motive_2024.txt';
+
+input_struct.refresh_time_sec = 2;
+
+% --- END USER CHOICES ----------------------------------------------------
+% -------------------------------------------------------------------------
+
+% Set directories and grab Meta_Data_process_file
+root_software='/Volumes/MOD HD/Users/Shared/Software_current_cruise/MOD_fish_lib/';
+
+input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/Current_Cruise/Realtime_RAW/';
+Meta_Data_process_dir = fullfile(root_software,['EPSILOMETER/Meta_Data_Process/']);
+input_struct.Meta_Data_process_file = fullfile(Meta_Data_process_dir,Meta_Data_process_file);
+
 % --- From ftcd_epsi/Setup   -------------------------------------------------------
 %TODO give a folder path to Setup
-root_software='/Volumes/MOD HD/Users/Shared/Software_current_cruise/MOD_fish_lib/';
 path2setup=fullfile(root_software,'Acquisition/fctd_epsi_acq/build/fctd_epsi/Build/Products/Debug/Setup');
 fid=fopen(path2setup,'r');
 fseek(fid,0,1);
@@ -48,27 +68,6 @@ end
 
 
 
-% Also plot spectra?
-include_spectra = 0;
-
-% Meta_Data process file (make sure this file has the correct serial
-% numbers for CTD, s1, s2, t1, t2. If you're running fctd, you can leave
-% s1, s2, t1, t2 = '115')
-Meta_Data_process_file = 'MDP_motive_2024.txt';
-
-% These probably will be the same for the whole cruise
-
-% input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/TFO2024/Realtime_RAW/';
-% input_struct.Meta_Data_process_file = '/Volumes/Software_TFO2024/EPSILOMETER/Meta_Data_Process/MDP_tfo_2024.txt';
-
-input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/MOTIVE2024/Realtime_RAW/';
-Meta_Data_process_dir = fullfile(root_software,'/EPSILOMETER/Meta_Data_Process/');
-input_struct.Meta_Data_process_file = fullfile(Meta_Data_process_dir,Meta_Data_process_file);
-input_struct.refresh_time_sec = 2;
-
-% --- END USER CHOICES ----------------------------------------------------
-% -------------------------------------------------------------------------
-
 % Set command window color
 set_window_color('yellow')
 close all;
@@ -81,7 +80,11 @@ switch instrument
             epsiAuto_timeseries_spectra
         end
     case {'fctd','FCTD'}
-        fctdAuto_timeseries
+        if ~include_spectra
+            fctdAuto_timeseries
+        elseif include_spectra
+            epsiAuto_realtime_spectra
+        end
     case 'fctd_tridente'
         fctdAuto_timeseries_tridente
 end

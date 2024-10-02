@@ -450,6 +450,11 @@ if makeFig
         
         if ~isempty(CTD.T)
             plot(ax(5),time_dnum(idxSeg),T_interp(idxSeg),'Color',cols.T)
+            minT = nanmin(T_interp(idxSeg));
+            maxT = nanmax(T_interp(idxSeg));
+        else
+            minT = 0;
+            maxT = 1;
         end
         
         
@@ -457,13 +462,13 @@ if makeFig
         ax(2).YLim=[mina2 maxa2];
         ax(3).YLim=[mint maxt];
         ax(4).YLim=[mins maxs];
-        %ax(5).YLim=[-0.1 1.5];
+        ax(5).YLim=[minT maxT];
         ylabel(ax(1),'V','FontSize',14)
         ylabel(ax(2),'V','FontSize',14)
         ylabel(ax(3),'V','FontSize',14)
         ylabel(ax(4),'V','FontSize',14)
         ylabel(ax(5),'°C','FontSize',14)
-        for a=1:4
+        for a=1:5
             ax(a).XTickLabel='';
             ax(a).FontSize=14;
             ax(a).XLim=[time_dnum(idxSeg(1)) time_dnum(idxSeg(end))];

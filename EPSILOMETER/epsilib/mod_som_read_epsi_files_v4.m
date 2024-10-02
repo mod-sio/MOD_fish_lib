@@ -123,12 +123,24 @@ else
     fishflag_name      = [];
 
 end
+if newSetup_flag
+    Meta_Data.experiment_name    = experiment_name;
+    Meta_Data.cruise_name        = cruise_name;
+    Meta_Data.vehicle_name       = vehicle_name;
+    Meta_Data.pressure_case_name = pressure_case_name;
+    Meta_Data.fishflag_name      = fishflag_name;
+end
+
 
 %% get CTD cal coef
 header_length=strfind(str,'END_FCTD_HEADER_START_RUN');
 str_SBEcalcoef_header=str(strfind(str,'SERIALNO'):header_length);% cal coef from format 1 
 idx_head_format2=strfind(str,'SERIAL NO');
+if ~isempty(idx_head_format2)
 str_SBEcalcoef_header2=str(idx_head_format2(1):header_length);% cal coef from format 2 (same format as the fish) 
+else
+    str_SBEcalcoef_header2=[];
+end
 if ~isempty(str_SBEcalcoef_header) | ~isempty(str_SBEcalcoef_header2)
     if (~isempty(str_SBEcalcoef_header))
         SBEcal=get_CalSBE_from_modraw_header(str_SBEcalcoef_header);
@@ -268,13 +280,6 @@ else
         end
     end
     
-    if newSetup_flag
-        Meta_Data.experiment_name    = experiment_name;
-        Meta_Data.cruise_name        = cruise_name;
-        Meta_Data.vehicle_name       = vehicle_name;
-        Meta_Data.pressure_case_name = pressure_case_name;
-        Meta_Data.fishflag_name      = fishflag_name;
-    end
 
 end
 if ~isempty(ind_dcal_start)
@@ -518,9 +523,13 @@ else
         
         % Sort epsi fields
         if contains(Meta_Data.fishflag_name,'FCTD')
+            try
             epsi = orderfields(epsi,{'dnum','time_s','t1_count','t2_count','f1_count',...
                 'c1_count','a1_count','a2_count','a3_count','t1_volt','t2_volt','f1_volt',...
                 'c1_volt','a1_g','a2_g','a3_g'});
+            catch
+                disp ('No orderfields.')
+            end
         else
         try
             epsi = orderfields(epsi,{'dnum','time_s','t1_count','t2_count','s1_count',...
@@ -548,7 +557,7 @@ else
     % SBE-specific quantities
     % ---------------------------------
     
-    switch Meta_Data.CTD.name
+    switch Meta_Data.CTD.name(:).'
         case{"SBE49","SBE","S49","SB49"}
             sbe.data.format      = 'eng';
             sbe.data.length      = 24; %It's 24 for BLT data
