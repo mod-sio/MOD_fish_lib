@@ -566,7 +566,7 @@ if makeFig
         % Add tag for tracking axes if you're plotting in realtime
         ax(1).Tag = 'tMid_spectra_a1';
         
-        figureStamp(getFilename)
+        %figureStamp(getFilename)
     else
         % Add tag for tracking axes if you're plotting in realtime
         plot(ax(1),1,1);

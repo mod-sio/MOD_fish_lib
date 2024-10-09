@@ -252,9 +252,8 @@ if ~isempty(myASCIIfiles)
                 % If the MAT file exists and its saved raw file is equal to the ascii file, skip recoverting. All
                 % of the raw data has already been converted
                 % (DO NOTHING. Load the Meta_Data but nothing else.)
-                
-                old_Meta_Data = load(fullfile(myMATfile.folder,myMATfile.name),'Meta_Data');
-                matData.Meta_Data = old_Meta_Data.Meta_Data;
+                matData.Meta_Data = load(fullfile(myMATfile.folder,myMATfile.name),'Meta_Data');
+
 
             elseif (~isempty(myMATfile) && myASCIIfiles(i).bytes>raw_file_info.bytes) || isempty(myMATfile)
                 % If the MAT file exists already but is older than the raw data
@@ -275,7 +274,7 @@ if ~isempty(myASCIIfiles)
                 % % End for debugging
 
                 %fprintf(1,'Converting %s%s\n',dirs.mat,myMATfile.name);
-                fprintf(1,'%s: %s%s --> %s.mat\n',datestr(now,'YY.mm.dd HH:MM:SS'),base,suffixStr,base')
+                fprintf(1,'%s%s --> %s.mat\n', base,suffixStr,base')
 
                 % Read file and save data in matData structure
                 filename = fullfile(raw_dir,myASCIIfiles(i).name);
@@ -291,7 +290,7 @@ if ~isempty(myASCIIfiles)
 
                 % Save data in .mat file
                 save(fullfile(MatDir,base),'-struct','matData')
-                %fprintf(1,'%s: Wrote  %s.mat\n',datestr(now,'YY.mm.dd HH:MM:SS'),base);
+                fprintf(1,'%s: Wrote  %s.mat\n',datestr(now,'YY.mm.dd HH:MM:SS'),base);
 
                 %Empty contents of matData structure
                 use matData

@@ -334,7 +334,7 @@ if  plotData
     ylabel('C^2/Hz','fontsize',20)
 
     % Title for figure
-    titleStr = strrep([Meta_Data.cruise_name ' ' Meta_Data.vehicle_name ' ' Meta_Data.deployment],'_','\_');
+    titleStr = strrep([Meta_Data.cruise_name(:)' ' ' Meta_Data.vehicle_name(:)' ' ' Meta_Data.deployment(:)'],'_','\_');
     if isfield(Profile,'profNum')
         titleStr={sprintf('%s cast %i - temperature_ ',titleStr,Profile.profNum);...
             sprintf('dTdV = %2.2f',dTdV(1))};
@@ -381,7 +381,7 @@ if  plotData
     xlabel('Hz','fontsize',20)
     ylabel('C^2/Hz','fontsize',20)
     % Title for figure
-    titleStr = strrep([Meta_Data.cruise_name ' ' Meta_Data.vehicle_name ' ' Meta_Data.deployment],'_','\_');
+    titleStr = strrep([Meta_Data.cruise_name(:)' ' ' Meta_Data.vehicle_name(:)' ' ' Meta_Data.deployment(:)'],'_','\_');
     if isfield(Profile,'profNum')
         titleStr={sprintf('%s cast %i - temperature_ ',titleStr,Profile.profNum);...
             sprintf('dTdV = %2.2f',dTdV(2))};

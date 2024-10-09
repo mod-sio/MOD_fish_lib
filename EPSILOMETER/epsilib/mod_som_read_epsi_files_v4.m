@@ -43,7 +43,7 @@ function [data] = mod_som_read_epsi_files_v4(filename,Meta_Data)
 c3515 = 42.914;
 
 %% Open file and save contents as 'str'
-fprintf("   Open %s \r\n",filename)
+%fprintf("   Open %s \r\n",filename)
 fid = fopen(filename);
 fseek(fid,0,1);
 frewind(fid);
@@ -152,15 +152,14 @@ if ~isempty(str_SBEcalcoef_header) | ~isempty(str_SBEcalcoef_header2)
     end
 else
     if ~isempty(ind_sbe_start)
-        fprintf("SBE cal coef are missing in file %s ",filename)
-        listfile=dir(Meta_Data.paths.raw_data);
+        fprintf("SBE cal coef are missing in file %s \n",filename)
+        listfile=dir(fullfile(Meta_Data.paths.raw_data,['*',Meta_Data.PROCESS.rawfileSuffix]));
         list_fullfilename=fullfile({listfile.folder},{listfile.name});
         idx_file=find(cellfun(@(x) strcmp(x,filename),list_fullfilename));
         count=0;
         %ALB If SBEcal missing  ALB using the SBEcal from the previous 10 modraw
         %files
-        while isempty(str_SBEcalcoef_header)
-            count=count+1;
+        while isempty(str_SBEcalcoef_header)   
             fprintf("  Using Open %s \r\n",list_fullfilename{idx_file-count})
             fid1 = fopen(list_fullfilename{idx_file-count});
             fseek(fid1,0,1);
@@ -176,6 +175,7 @@ else
             if count>10
                 error("No SBE data in modraw %s. \n Check the file ",filename)
             end
+            count=count+1;
         end
     end
 
@@ -192,7 +192,8 @@ if ~isempty(str_EPSICHANNEL_header)
     Meta_Data.AFE.s1=epsi_probes.ch3;
     Meta_Data.AFE.s2=epsi_probes.ch4;
 else
-    warning('No Epsi probe serial number in file %s',filename)
+    [a,b,c] = fileparts(filename);
+    fprintf('   No Epsi probe serial number in file %s \n',[b,c])
 
 end
 
@@ -522,7 +523,7 @@ else
         end
         
         % Sort epsi fields
-        if contains(Meta_Data.fishflag_name,'FCTD')
+        if isfield(Meta_Data,'fishflag_name') && contains(Meta_Data.fishflag_name,'FCTD')
             try
             epsi = orderfields(epsi,{'dnum','time_s','t1_count','t2_count','f1_count',...
                 'c1_count','a1_count','a2_count','a3_count','t1_volt','t2_volt','f1_volt',...

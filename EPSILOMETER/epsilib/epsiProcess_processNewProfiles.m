@@ -101,7 +101,7 @@ for iProf=1:length(PressureTimeseries.startprof)
         if iProf>1 && Profile.Meta_Data.AFE.t1.cal==0 && Profile.Meta_Data.AFE.t2.cal==0
             obj.Meta_Data=mod_som_get_temp_probe_calibration(obj.Meta_Data);
             Profile.Meta_Data.AFE.t1.cal=obj.Meta_Data.AFE.t1.cal;
-            Profile.Meta_Data.AFE.t2.cal=obj.Meta_Data.AFE.t1.cal;
+            Profile.Meta_Data.AFE.t2.cal=obj.Meta_Data.AFE.t2.cal;
         end
 
         Profile = obj.f_computeTurbulence(Profile);

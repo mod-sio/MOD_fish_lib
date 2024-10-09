@@ -72,9 +72,9 @@ dirs.raw_incoming = raw_dir;
 dirs.raw_copy  = fullfile(process_dir,'raw');
 dirs.mat       = fullfile(process_dir,'mat');
 experiment_dir = fileparts(process_dir);
-dirs.fctd_cruise  = fullfile(experiment_dir,'FCTDmat');
+%dirs.fctd_cruise  = fullfile(experiment_dir,'FCTDmat');
 dirs.fctd_deployment = fullfile(process_dir,'fctd_mat');
-dirs.fctd_rot  = fullfile(experiment_dir,'FCTDrot');
+%dirs.fctd_rot  = fullfile(experiment_dir,'FCTDrot');
 
 % Create directories if they don't exist
 if ~exist(process_dir,'dir')
@@ -86,15 +86,15 @@ end
 if ~exist(dirs.mat,'dir')
     eval([ '!mkdir ' strrep(dirs.mat,' ','\ ')]);
 end
-if ~exist(dirs.fctd_cruise,'dir')
-    eval([ '!mkdir ' strrep(dirs.fctd_cruise,' ','\ ')]);
-end
+%if ~exist(dirs.fctd_cruise,'dir')
+%    eval([ '!mkdir ' strrep(dirs.fctd_cruise,' ','\ ')]);
+%end
 if ~exist(dirs.fctd_deployment,'dir')
     eval([ '!mkdir ' strrep(dirs.fctd_deployment,' ','\ ')]);
 end
-if ~exist(dirs.fctd_rot,'dir')
-    eval([ '!mkdir ' strrep(dirs.fctd_rot,' ','\ ')]);
-end
+%if ~exist(dirs.fctd_rot,'dir')
+%    eval([ '!mkdir ' strrep(dirs.fctd_rot,' ','\ ')]);
+%end
 
 
 % Copy a bench_config into process_dir
