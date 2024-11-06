@@ -21,14 +21,14 @@
 % USER INPUTS
 % These will probably be the same for the whole cruise
 clear input_struct
-input_struct.Meta_Data_process_file = '/Volumes/Software_TFO2024/EPSILOMETER/Meta_Data_Process/MDP_tfo_2024.txt';
+input_struct.Meta_Data_process_file = '/Volumes/Software_current_cruise/MOD_fish_lib/EPSILOMETER/Meta_Data_Process/MDP_motive_2024.txt';
 input_struct.refresh_time_sec =  2*60;
 input_struct.cruise_specifics = 'tfo_2024';
 epsi_depth_array = 0:1600;
 fctd_depth_array = 0:2100;
 
 % Realtime or Simulator mode
-data_mode = 'simulator'; %'realtime' or 'simulator'
+data_mode = 'realtime'; %'realtime' or 'simulator'
 
 % -------------------------------------------------------------------------
 
@@ -219,6 +219,23 @@ if ~isfield(input_struct,'str_to_match')
 end
 
 
+%% All options have been determined. Now get depth array, create output directory, and get ready to run the processing script
+% Get the depth array based on instrument choice
+switch instrument
+    case {'epsi','EPSI'}
+        input_struct.depth_array = epsi_depth_array;
+    case {'fctd','FCTD'}
+        input_struct.depth_array = fctd_depth_array;
+end
+
+% Make the process directory
+if ~exist(fullfile(input_struct.process_dir,'raw'),'dir')
+    mkdir(input_struct.process_dir);
+end
+
+% Set command window color
+set_window_color('cyan')
+
 %% Copy Setup file onto the end of Meta_Data_Process file to make a new file with datetime stamped
 % Make a new file in the process directory called 'MD' with the
 % current datetime
@@ -244,22 +261,6 @@ fclose(fidNew);
 
 input_struct.Meta_Data_process_file = newfile_name;
 
-%% All options have been determined. Now get depth array, create output directory, and get ready to run the processing script
-% Get the depth array based on instrument choice
-switch instrument
-    case {'epsi','EPSI'}
-        input_struct.depth_array = epsi_depth_array;
-    case {'fctd','FCTD'}
-        input_struct.depth_array = fctd_depth_array;
-end
-
-% Make the process directory
-if ~exist(fullfile(input_struct.process_dir,'raw'),'dir')
-    mkdir(input_struct.process_dir);
-end
-
-% Set command window color
-set_window_color('cyan')
 
 %% Run the processing script on a timer
 switch instrument

@@ -37,7 +37,7 @@ input_struct.refresh_time_sec = 2;
 % -------------------------------------------------------------------------
 
 % Set directories and grab Meta_Data_process_file
-root_software='/Volumes/MOD HD/Users/Shared/Software_current_cruise/MOD_fish_lib/';
+root_software='/Volumes/Software_current_cruise/MOD_fish_lib/';
 
 input_struct.raw_dir = '/Users/Shared/EPSI_PROCESSING/Current_Cruise/Realtime_RAW/';
 Meta_Data_process_dir = fullfile(root_software,['EPSILOMETER/Meta_Data_Process/']);

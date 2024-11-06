@@ -61,6 +61,3 @@ CTD.output_format=24
 Ascii_dataFile.runname='EPSI'
 Ascii_dataFile.path='/Users/Shared/FCTD_EPSI_DATA/Current_Cruise/'
 Ascii_dataFile.dataFileSize=5000000
-
-
-
